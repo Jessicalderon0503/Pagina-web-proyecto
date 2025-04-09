@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios de Ingeniería - Inicio</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
-<body>
     <div class="header">
-        <h1>SERVICIOS DE INGENIERÍA</h1>
+        <h1>SERVICIOS DE INGENIERIA</h1>
     </div>
     
       <div class="menu">
-        <a href="index.html">Inicio</a>
+        <a id="a" href="index.html">Inicio</a>
         <a href="Servicios.html">Servicios</a>
         <a href="servicios-destacados.html">Servicios Destacados</a>
         <a href="testimonios1.html">Testimonios</a>
@@ -21,20 +21,45 @@
         <a href="registro.html">Registro</a>
         <a href="login.html">Login</a>
     </div>
+
     
-    <div class="container">
+    <div class="container1">
+        <div class="contenidoli">
+            <nav>
+            
+                <ol id="listanum"><!--Listas no numeradas-->
+                    <li><a href="#section1">Desarrollo de software a la medida</a></li>
+                    <li><a href="#section2">Diseño de Apps</a></li>
+                    <li><a href="#section3">Diseño de paginas webs</a></li>
+                    <li><a href="#section4">Marketing</a></li>
+                    <li><a href="#section5">Servicios de outsourcing</a></li>
+                </ol>
+            
+            </nav>
+
+
+        </div>
+    </div>
+    <div class="container2"><!--Encabezado de sección-->
+        <div class="imagenes"><!--imagenes-->
+            <img src="imagenes/Servicios3.jpg" alt="Imagen de ejemplo" width="200" height="200"><!--Imagen-->
+        </div>
+    
+        <div class="imagenes"><!--imagenes-->
+            <img src="imagenes/servicios4.jpg" alt="Imagen de ejemplo 2" width="200" height="200">
+        </div>
+        </div>
+
+
+    <div class="container3">
         <div class="section">
-            <h2 class="section-title">Bienvenidos a Servicios de Ingeniería</h2>
+            <h1 class="section-title">Bienvenidos a Servicios de Ingeniería</h1>
             <div class="flex flex-wrap justify-between">
                 <div style="flex: 1; min-width: 300px; padding-right: 20px;">
                     <p>Creamos soluciones de software sólidas, ágiles y adaptables a las necesidades de tu negocio. Nuestro enfoque se centra en la innovación y la personalización para garantizar el éxito de tu proyecto.</p>
-                    <br>
                     <p>Con años de experiencia en el sector, ofrecemos servicios de alta calidad que impulsan el crecimiento y la eficiencia de tu empresa.</p>
                     <br>
-                    <a href="servicios.html" class="btn">Conoce nuestros servicios</a>
-                </div>
-                <div style="flex: 1; min-width: 300px;">
-                    <img src="img/Servicios 1.jpg" alt="Servicios de Ingeniería" style="width: 100%; border-radius: 10px;">
+            
                 </div>
             </div>
         </div>
@@ -42,22 +67,32 @@
         <div class="section">
             <h2 class="section-title">Nuestros Servicios Destacados</h2>
             <div class="grid">
-                <div class="card">
-                    <h3>Desarrollo de Software</h3>
-                    <p>Soluciones personalizadas para optimizar la operatividad de tu empresa.</p>
+                <div id="section1" class="card">
+                    <h3><img src="imagenes/imagendev.png" alt="Imagen de desarrollo" width="20" height="20"> Desarrollo de Software a la medida</h3>
+                    <p>Creamos soluciones digitales personalizadas que se adaptan exactamente a las necesidades de tu negocio, optimizando procesos y mejorando la eficiencia operativa.</p>
                 </div>
-                <div class="card">
-                    <h3>Diseño Web</h3>
-                    <p>Páginas modernas y desarrollo optimizado para tu presencia digital.</p>
+                <div id="section2" class="card">
+                    <h3><img src="imagenes/imagendis.png" alt="Imagen de diseño" width="20" height="20"> Diseño de Apps</h3>
+                    <p>Diseñamos y desarrollamos aplicaciones móviles intuitivas y funcionales para Android y iOS, enfocadas en la experiencia del usuario y el rendimiento.</p>
                 </div>
-                <div class="card">
-                    <h3>Aplicaciones Móviles</h3>
-                    <p>Apps intuitivas y funcionales para conectar con tus clientes.</p>
+                <div id="section3" class="card">
+                    <h3><img src="imagenes/imagenweb.png" alt="Imagen de web" width="20" height="20"> Diseño de paginas Web</h3>
+                    <p>Construimos sitios web modernos, atractivos y adaptables a todo tipo de dispositivos, con enfoque en diseño visual y posicionamiento en buscadores.</p>
+                </div>
+                <div id="section4" class="card">
+                    <h3><img src="imagenes/imagenventa.png" alt="Imagen de marketing" width="20" height="20"> Marketing</h3>
+                    <p>Impulsamos tu marca con estrategias digitales efectivas: redes sociales, campañas publicitarias, email marketing y posicionamiento SEO/SEM.</p>
+                </div>
+                <div id="section5" class="card">
+                    <h3><img src="imagenes/imagenpeople.png" alt="Imagen de outsourcing" width="20" height="20"> Servicios de Outsourcing</h3>
+                    <p>Proveemos talento tecnológico calificado para proyectos específicos o soporte continuo, reduciendo costos y asegurando alta calidad.</p>
                 </div>
             </div>
         </div>
     </div>
-    
+
+
+    <div style="clear: both;"></div>
     <div class="footer">
         <p>&copy; 2025 Servicios de Ingeniería. Todos los derechos reservados.</p>
     </div>
