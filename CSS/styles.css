@@ -37,6 +37,7 @@ body{
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    margin: 0;
 
 }
 
@@ -57,6 +58,12 @@ a:hover{
 
 }
 
+.head__main{
+    position: relative;
+    background-color: transparent;
+    padding-top: 200px;
+    box-sizing: border-box;
+}
 
 .header{
 
@@ -64,15 +71,20 @@ a:hover{
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     text-align: center;
+    width: 100%;
     padding: 10px; /*Espacio entre el texto y el borde*/
+    position: fixed;
+    left: 0;
+    top: 0;
+
 }
 
 .menu{
     background-color: #fbfbfb;
     color: rgb(0, 0, 0);
+    width: 98%;
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     height: 50px auto; /*Altura del menu*/
-    width: 90%; /*Ancho del menu*/
     margin: 20px auto; /*Espacio entre el texto y el borde*/
     border-radius: 30px; /*Esquinas redondeadas*/
     align-items: center;
@@ -82,7 +94,10 @@ a:hover{
     display: flex; /* Usar flexbox para centrar el contenido */
     gap: 20px; /* Espacio entre los elementos del menú */
     display: flex;
-    flex-wrap: wrap;
+    position: fixed;
+    top: 105px;
+    left: 10px;
+
 }
 
 .menu a {
@@ -102,6 +117,22 @@ a:hover{
     border-radius: 30px;
 }
 
+.menu__login{
+    display: inline-block;
+    padding: 5px 0px;
+    margin-right: 20px;
+    background-color: rgba(0, 0, 255, 0.727);
+    color: #fff !important;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.menu__login:hover{
+    color: rgba(0, 0, 255, 0.727) !important;
+    background-color: rgb(255, 255, 255) !important;
+    border: 1px solid  rgba(0, 0, 255, 0.727);
+}
+
 .container1{                                                
     width: 60%;
     height: 500px;
@@ -113,19 +144,20 @@ a:hover{
 
     width: 30%;
     height: 500px;
-    padding: 10px;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;     /* apila las imágenes una debajo de otra */
     align-items: center;        /* centra horizontalmente */
     justify-content: center;    /* centra verticalmente (opcional) */
-    gap: 20px;  
+    gap: 10px;  
+
 }
 
 .container3{                                                
     width: 70%;
     height: auto;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 1%;
     padding: 30px;
     overflow-wrap: break-word;
     background-color: rgba(128, 128, 128, 0.073);
@@ -191,7 +223,7 @@ a:hover{
 
     font-family: 'Luxurious Roman', serif !important;
     width: 25%;
-    height: 400px;
+    height: 300px;
     float: left;
     margin-left: 10%;
     overflow-wrap: break-word;
@@ -201,14 +233,14 @@ a:hover{
     align-items: center;
     text-align: center;
     padding: 10px;
-
+    box-sizing: border-box;
 }
 
 .imagenes{                                                
 
     float: left; /*Hacer que los divs floten a la izquierda*/
     margin-left: 3%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 
