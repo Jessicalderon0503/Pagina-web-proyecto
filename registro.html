@@ -5,31 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - Servicios de Ingeniería</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>SERVICIOS DE INGENIERÍA</h1>
+    <div class="head__main">
+        <div class="header">
+            <h1>SERVICIOS DE INGENIERIA</h1>
+        </div>
+        
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="Servicios.html">Servicios</a>
+            <a href="servicios-destacados.html">Servicios Destacados</a>
+            <a href="testimonios1.html">Testimonios</a>
+            <a href="contacto.html">Contacto</a>
+            <a id="a" href="registro.html">Registro</a>
+            <a href="login.html" class="menu__login">Login</a>
+        </div>
     </div>
     
-    <div class="menu">
-        <a href="index.html">Inicio</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="servicios-destacados.html">Servicios Destacados</a>
-        <a href="testimonios.html">Testimonios</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="registro.html">Registro</a>
-        <a href="login.html">Login</a>
-    </div>
-    
-    <div class="container" style="max-width: 600px;">
+    <div class="container">
         <div class="section">
             <h2 class="section-title">Registro de Usuario</h2>
-            <p>Crea una cuenta para acceder a contenido exclusivo y mantenerte informado sobre nuestros servicios.</p>
+            <p style="text-align: center;">Crea una cuenta para acceder a contenido exclusivo y mantenerte informado sobre nuestros servicios.</p>
         </div>
         
         <div class="card">
-            <form id="signup-form">                
+            <form>
+                <div class="form-group">
+                    <label for="fullname">Nombre completo:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Tu nombre completo" required>
+                </div>
+                
                 <div class="form-group">
                     <label for="email">Correo electrónico:</label>
                     <input type="email" id="email" name="email" placeholder="tu@email.com" required>
@@ -40,7 +48,13 @@
                     <input type="password" id="password" name="password" placeholder="Crea una contraseña segura" required>
                 </div>
                 
-                <input type="submit" value="Registrar">
+                <div class="form-group">
+                    <label for="confirm-password">Confirmar contraseña:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirma tu contraseña" required>
+                </div>
+                <div class="form-group form-group-enviar">
+                    <input type="submit" value="Registrar">
+                </div>
             </form>
             
             <div style="margin-top: 20px; text-align: center;">
@@ -52,8 +66,5 @@
     <div class="footer">
         <p>&copy; 2025 Servicios de Ingeniería. Todos los derechos reservados.</p>
     </div>
-    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
-    <script src="js/firebase.js"></script>    
 </body>
 </html>

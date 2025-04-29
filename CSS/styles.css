@@ -2,15 +2,22 @@
 
 h1{
     color:rgb(255, 255, 255);
+    font-family: 'Luxurious Roman', serif;
 
 }
 h2{
-    color:green
+    color:rgb(255, 255, 255);
+    font-family: 'Luxurious Roman', serif;
 }
 h3{
-    color:orange
+    color:rgb(255, 255, 255);
+    font-family: 'Luxurious Roman', serif;
 }   
 
+p{
+    color:rgb(255, 255, 255);
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
 
 /*Seleccion por ID, Solo se puede usar en ID del html*/
 #enc-2{
@@ -27,27 +34,36 @@ h3{
 
 body{
     background-color: rgb(0, 0, 0);
-    color: rgb(246, 153, 153);
+    color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    margin: 0;
 
 }
 
-a{
 
-    text-decoration: none;/*Quitar subrayado*/
-    font-size: 20px;
-    font-weight: bold;
-}
 
 a:hover{
     color: rgb(0, 0, 0);/*Color al pasar el mouse*/
-    background-color: rgb(246, 153, 153);/*Color de fondo al pasar el mouse*/
-    font-size: 25px;/*Tamaño de letra al pasar el mouse*/
+    background-color: #e0e0e03a;/*Color de fondo al pasar el mouse*/
+    font-size: 110%;/*Tamaño de letra al pasar el mouse*/
     font-weight: bold;/*Negrita al pasar el mouse*/
     text-decoration: none;/*Quitar subrayado al pasar el mouse*/
 }
 
+#a {
+
+    text-decoration:underline;/*subrayado*/
+    font-weight: bold;/*Negrita*/
+
+}
+
+.head__main{
+    position: relative;
+    background-color: transparent;
+    padding-top: 200px;
+    box-sizing: border-box;
+}
 
 .header{
 
@@ -55,15 +71,20 @@ a:hover{
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     text-align: center;
+    width: 100%;
     padding: 10px; /*Espacio entre el texto y el borde*/
+    position: fixed;
+    left: 0;
+    top: 0;
+
 }
 
 .menu{
     background-color: #fbfbfb;
     color: rgb(0, 0, 0);
+    width: 98%;
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     height: 50px auto; /*Altura del menu*/
-    width: 90%; /*Ancho del menu*/
     margin: 20px auto; /*Espacio entre el texto y el borde*/
     border-radius: 30px; /*Esquinas redondeadas*/
     align-items: center;
@@ -73,13 +94,17 @@ a:hover{
     display: flex; /* Usar flexbox para centrar el contenido */
     gap: 20px; /* Espacio entre los elementos del menú */
     display: flex;
-    flex-wrap: wrap;
+    position: fixed;
+    top: 105px;
+    left: 10px;
+
 }
 
 .menu a {
     flex: 1; /* <<< Distribuye el ancho de forma equitativa */
     text-decoration: none;
     color: inherit;
+    font-size: clamp(12px, 2.5vw, 22px);
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center;     /* Centra verticalmente */
@@ -92,12 +117,113 @@ a:hover{
     border-radius: 30px;
 }
 
+.menu__login{
+    display: inline-block;
+    padding: 5px 0px;
+    margin-right: 20px;
+    background-color: rgba(0, 0, 255, 0.727);
+    color: #fff !important;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.menu__login:hover{
+    color: rgba(0, 0, 255, 0.727) !important;
+    background-color: rgb(255, 255, 255) !important;
+    border: 1px solid  rgba(0, 0, 255, 0.727);
+}
+
+.container1{                                                
+    width: 60%;
+    height: 500px;
+    float: left;
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+.container2{                                                
+
+    width: 30%;
+    height: 500px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;     /* apila las imágenes una debajo de otra */
+    align-items: center;        /* centra horizontalmente */
+    justify-content: center;    /* centra verticalmente (opcional) */
+    gap: 10px;  
+
+}
+
+.container3{                                                
+    width: 70%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 1%;
+    padding: 30px;
+    overflow-wrap: break-word;
+    background-color: rgba(128, 128, 128, 0.073);
+    border-radius: 50px; /* Esquinas redondeadas */
+
+}
+
+
+.galeria {
+
+    display: flex;
+    flex-wrap: wrap;        /* Permite que baje a otra línea si no cabe */
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20%;
+    font-size: clamp(12px, 2.5vw, 18px);
+  }
+  .items {
+    width: 45%;             /* Dos columnas (45% + 45% + gap) */
+    text-align: center;
+  }
+  .items img {
+    width: 30%;            /* Que se ajuste al contenedor */
+    height: auto;         /* Mantiene la proporción */
+    border-radius: 10px;
+  }
+
+
+
+#listanum{
+    font-family: 'Luxurious Roman', serif !important;
+    font-size: clamp(12px, 2.5vw, 30px);
+    color: rgb(255, 255, 255);
+}
+
+#listanum a {
+    color: rgb(255, 255, 255) !important; /* Hereda el color de la lista */
+    text-decoration: none; /* Quita el subrayado */
+    font-size: clamp(12px, 2.5vw, 30px);
+    transition: color 0.3s ease;
+  }
+
+  #listanum li {
+    margin-bottom: 15px; /* espacio entre cada ítem */
+  }
+
+.contenidoli{                                                
+
+    font-family: 'Luxurious Roman', serif !important;
+    height: auto;
+    float: left;
+    margin-top: 10%;
+    margin-left: 5%;
+    overflow-wrap: break-word;
+    font-size: clamp(12px, 2.5vw, 14px);
+    display: flex;
+    padding: 10px;
+    gap: 20px; /* Espacio entre los elementos del menú */
+
+}
 
 .contenido{                                                
 
     font-family: 'Luxurious Roman', serif !important;
     width: 25%;
-    height: 400px;
+    height: 300px;
     float: left;
     margin-left: 10%;
     overflow-wrap: break-word;
@@ -107,26 +233,24 @@ a:hover{
     align-items: center;
     text-align: center;
     padding: 10px;
-
+    box-sizing: border-box;
 }
 
 .imagenes{                                                
 
     float: left; /*Hacer que los divs floten a la izquierda*/
     margin-left: 3%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 
 .contenido2{
     background-color: #fbfbfb;
-    color: rgb(0, 0, 0);
     font-family: 'Quicksand',Arial, Helvetica, sans-serif;
     font-size:auto;
     height: auto; /*Altura del menu*/
     width: 50%; /*Ancho del menu*/
     margin-top: 70px; /*Espacio entre el texto y el borde*/
-    
     border-radius: 20px; /*Esquinas redondeadas*/
     align-items: center;
     text-align: center;
@@ -135,19 +259,88 @@ a:hover{
     float: left; /*Hacer que los divs floten a la izquierda*/
     display: flex; /* Usar flexbox para centrar el contenido */
 }
+.contenido2 p{
+    color: rgb(0, 0, 0)!important;
+}
 
 .footer{
     
     font-family: Arial, Helvetica, sans-serif;
     font-size:auto;
     height: auto; /*Altura del menu*/
-    width: 50%; /*Ancho del menu*/
+    width: 100%; /*Ancho del menu*/
     margin-top: 70px; /*Espacio entre el texto y el borde*/
-    margin-left:30%; /*Espacio entre el texto y el borde*/
+    margin-left:0%; /*Espacio entre el texto y el borde*/
     border-radius: 20px; /*Esquinas redondeadas*/
     align-items: center;
     text-align: center;
     justify-content: center; /* Centra horizontalmente */
     padding: 0;
     float: left; /*Hacer que los divs floten a la izquierda*/
+
+}
+
+/*Formularios*/
+
+.container{
+    width: 80%;
+    margin: auto;
+    text-wrap: pretty;
+}
+
+.section-title{
+    text-align: center;
+}
+
+form{
+    margin: auto;
+    margin-top: 50px;
+    background-color: transparent;
+    width: 80%;
+    border-radius: 5px;
+    padding: 20px 0;
+    box-shadow: 0px 0px 55px 0px #fff2;
+    font-size: 14px;
+    margin-bottom: 50px;
+   
+}
+input, textarea, select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 8px;
+    border: none;
+    border: 2px solid #666;
+    border-radius: 20PX;
+    box-shadow: 0px 0px 15px 0px #0003;
+    background-color: #fff;
+    color: #090082;
+}
+label{
+    font-size: 1em;
+    line-height: 2;
+}
+
+.form-group{
+    padding: 6px 20px;
+}
+
+.form-group-enviar input[type="submit"] {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin: auto;
+    display: block;
+
+    min-width: 150px;  /* tamaño mínimo */
+    max-width: 200px;  /* tamaño máximo */
+    width: 40%;        /* ancho flexible dentro de ese rango */
+    text-align: center;
+    
+}
+
+.section p{
+    font-size: 0,8em;
 }
